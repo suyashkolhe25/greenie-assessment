@@ -1,0 +1,184 @@
+.accounts {
+    width: 100%;
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    min-height: 100vh;
+}
+
+.account {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.account_box {
+    width: 90%;
+    margin: 0 auto;
+    padding: 8rem 0;
+
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    align-items: center;
+}
+
+.account_box_left h2 {
+    position: relative;
+    margin-top: -10px;
+    font-size: 3rem;
+    line-height: 0;
+    
+}
+
+.account_box p {
+    font-size: 1.2rem;
+}
+
+.account_box_left_box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    text-decoration:underline;
+}
+
+.account_box_left_box small {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.account_box_left_box span {
+    background-color: black;
+    color:aliceblue;
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    width: 4rem;
+    text-align: center;
+}
+
+.spinner-container {
+    position: fixed;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.account_box_left_input {
+    margin-top: 1rem;
+    padding: 1.3rem;
+    width: 80%;
+    border-radius: 4rem;
+    background-color: black;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    transition: 500ms;
+}
+
+.account_box_left_input input {
+    background-color: transparent;
+    color:white;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    width: 90%;
+}
+
+.account_box_left_input input::placeholder {
+    color:white;
+    font-size: 1.2rem;
+}
+
+.account_box_left_input_icon {
+    font-size: 2rem;
+
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 768px) {
+    .account_box {
+        width: 90%;
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .account_box_left_input {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .account_box_left h2 {
+        font-size: 2rem;
+    }
+}
+    
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .account_box {
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+    }
+
+    .account_box_left_input {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .account_box_left h2 {
+        font-size: 2rem;
+    }
+}
+
+
+.btn1{
+    color:black;  
+    background-color: transparent;  
+    font-size: 1.5rem ;
+    font-weight: bolder;
+    text-align: center;
+
+    /* margin-top: 3rem; */
+    padding: 1rem;
+    width: 80%;
+    border-radius: 4rem;
+    background-color: none;
+    padding-left: 22%;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    transition: 500ms;
+}
+
+.btn1 {
+    background-color: black;
+    color: white;
+}
+
+.btn1:hover {
+    border: 2px solid black;
+    background-color: transparent;
+    color: black;
+}
+
+.account_box_left_input:hover{
+    box-shadow: 2px 2px 8px blue, 4px 4px 8px red;
+}
+
+.account_box_right{
+    margin-top: -30px;
+    margin-left: 110px;
+    overflow: hidden;
+    border-radius: 3rem;
+}
+
+.account_box_right img {
+    width: 600px;
+    border-radius: 3rem;
+    transition: all .3s;
+}
+
+.account_box_right:hover img  {
+    transform: scale(1.02); 
+}
+
+.account_us_footer {
+    margin-top: 160px;
+}

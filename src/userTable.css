@@ -1,0 +1,17 @@
+.full-width-table {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.table {
+    width: 100%;
+    font-size: 25px;
+}
+
+.table th,
+.table td {
+    padding: 8px;
+    text-align: left;
+}
+

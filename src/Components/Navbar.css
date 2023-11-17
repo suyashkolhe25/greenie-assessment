@@ -1,0 +1,49 @@
+.navbar-brand{
+    transition: 0.35s;
+}
+.navbar-brand:hover{
+    color: blue;     
+}
+
+.navbar-brand.active {
+    color: #75dcf6;
+}
+
+img {
+    position: relative;
+    margin-bottom: 2px;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #75dcf6;
+    transform-origin: bottom right;
+    transition: transform 0.35s ease-out;
+}
+
+/* .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.hover-underline-animation:active:any-link{
+    color: blue;
+} */
+
+.hover-underline-animation:hover::after,
+.hover-underline-animation.active::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
